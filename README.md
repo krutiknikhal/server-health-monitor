@@ -525,25 +525,29 @@ Key learnings include:
 
 ---
 
-## Final Integration and Versioning
+## ## Final Integration and Versioning
 
-After the development and documentation work is complete, the final `dev` branch will be reviewed and merged into `main` through a pull request.
+After the development and documentation work was completed, the `dev` branch was reviewed and merged into the stable `main` branch through a pull request.
 
 ```text
 dev
  │
- │ Pull Request
+ │ Pull Request #5
  ▼
 main
 ```
 
-After the stable version is available on `main`, an annotated Git tag will be created to identify the first completed version:
+This final integration promoted the completed Server Health Monitor application, project configuration, documentation, and supporting evidence to the stable branch.
+
+After the merge, the local `main` branch was synchronized with `origin/main`.
+
+An annotated Git tag was then created to identify the first completed version of the project:
 
 ```text
 v1.0.0
 ```
 
-This section will be updated after the final integration and tagging steps are completed.
+The tag points to the final `dev → main` merge commit and was pushed to GitHub, providing a permanent version reference for the completed project.
 
 ---
 

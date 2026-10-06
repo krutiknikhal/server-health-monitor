@@ -282,6 +282,42 @@ A file that is already tracked by Git is not automatically untracked simply beca
 
 ---
 
+## Git Tags
+
+### Create an Annotated Tag
+
+```bash
+git tag -a v1.0.0 -m "Server Health Monitor v1.0.0"
+```
+
+Creates an annotated tag named `v1.0.0` for the current commit.
+
+Annotated tags contain additional metadata such as the tagger, date, and tag message.
+
+### View Tag Information
+
+```bash
+git show v1.0.0
+```
+
+Displays information about the tag and the commit it references.
+
+### Push a Tag to GitHub
+
+```bash
+git push origin v1.0.0
+```
+
+Publishes the local tag to the remote GitHub repository.
+
+### List Tags
+
+```bash
+git tag
+```
+
+Displays the tags available in the local repository.
+
 ## Typical Workflow Used in This Project
 
 ```bash
