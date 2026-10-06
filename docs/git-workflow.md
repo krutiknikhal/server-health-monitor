@@ -210,12 +210,35 @@ git pull
 
 ## Final Integration
 
-After development and documentation are complete, the final development branch will be merged into the stable branch using:
+After development and documentation were completed, the `dev` branch was merged into `main` through Pull Request #5.
 
 ```text
-dev → main
+dev
+ │
+ │ Pull Request #5
+ ▼
+main
 ```
 
-This keeps development work separate from the stable `main` branch until the project is ready for release.
+After the pull request was merged, the local `main` branch was synchronized with the remote repository using:
 
-A Git tag will then be used to identify the completed version of the project.
+```bash
+git switch main
+git fetch origin
+git pull
+```
+
+An annotated Git tag was then created to identify the completed version:
+
+```bash
+git tag -a v1.0.0 -m "Server Health Monitor v1.0.0"
+```
+
+The tag was verified locally and pushed to GitHub:
+
+```bash
+git show v1.0.0
+git push origin v1.0.0
+```
+
+The `v1.0.0` tag identifies the first completed stable version of the Server Health Monitor project.
