@@ -5,9 +5,11 @@ print ("Server Health Monitor")
 
 hostname = platform.node()
 operating_system = platform.system()
+python_version = platform.python_version()
 
 print("Hostname:", hostname)
 print("Operating System:", operating_system)
+print("Python Version:", python_version)
 
 c_drive = shutil.disk_usage("C:\\")
 d_drive = shutil.disk_usage("D:\\")
