@@ -440,18 +440,41 @@ Documents the Git commands used during the project and explains their purpose.
 
 ## Screenshots
 
-The `screenshots/` directory is used to store evidence of the completed workflow.
+The following screenshots provide evidence of the Git/GitHub workflow and application execution used throughout the project.
 
-Relevant evidence can include:
+### Server Health Monitor Output
 
-- Server Health Monitor execution
-- Git branch history
-- Pull request workflow
-- Successful pull request merges
-- Final repository state
-- Git tag
+The application was executed locally to verify hostname, operating system, and disk usage monitoring.
 
-Screenshots are added only where they provide useful evidence of the work performed.
+![Server Health Monitor Output](screenshots/application-output.png)
+
+---
+
+### Git Branch and Commit History
+
+The Git history demonstrates feature branching, merge commits, remote-tracking branches, and the intentionally unmerged `feature/python-info` branch.
+
+![Git Branch History](screenshots/git-branch-history.png)
+
+---
+
+### Pull Request History
+
+Pull requests were used to review and integrate completed features and configuration changes into the `dev` branch.
+
+The history also includes a pull request that was created with the wrong destination branch and closed without merging. A new pull request was then created with the correct `dev` destination.
+
+![Pull Request History](screenshots/pull-request-history.png)
+
+---
+
+### GitHub Branches
+
+The repository contains separate development, feature, and configuration branches.
+
+The `feature/python-info` branch was intentionally pushed to GitHub without creating a pull request or merging it, demonstrating that pushing a branch and integrating a branch are separate Git/GitHub operations.
+
+![GitHub Branches](screenshots/github-branches.png)
 
 ---
 
